@@ -2,9 +2,9 @@
 
 # For example, the input [3, 4, -1, 1] should give 2. The input [1, 2, 0] should give 3.
 
-# You can modify the input array in-place.
+# You can modify the input array in-place
 
-nums = [1,-1,3,4]
+
 def firstMissingPos(nums):
     if not nums:
         return 1
@@ -16,5 +16,8 @@ def firstMissingPos(nums):
                 break
     for i, num in enumerate(nums, 1):
         if num != i:
-            return i 
+            return i
     return len(nums) + 1
+
+
+print firstMissingPos([1, -3, -1, 3, 5, 4])
