@@ -3,3 +3,14 @@
 # For example, the input [3, 4, -1, 1] should give 2. The input [1, 2, 0] should give 3.
 
 # You can modify the input array in-place.
+
+
+def firstMissingPos(nums):
+    s = set(nums)
+    i = 1
+
+    while i in s:
+        
+        i+=1
+
+    return i 
